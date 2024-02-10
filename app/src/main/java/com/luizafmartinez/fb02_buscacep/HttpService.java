@@ -27,7 +27,7 @@ public class HttpService extends AsyncTask<Void, Void, CEP> {
         if (this.cepInserido != null && this.cepInserido.length() == 8) {
 
             try {
-                URL url = new URL("https://viacep.com.br/ws/" + this.cepInserido + "/json /");
+                URL url = new URL("https://viacep.com.br/ws/" + this.cepInserido + "/json/");
 
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
